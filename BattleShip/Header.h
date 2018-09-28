@@ -10,7 +10,14 @@
 #include <time.h>
 #include <string.h>
 
+// custom helper type to make booleans easier
+typedef enum bool
+{
+	FALSE, TRUE
+}Bool;
 
+void pause(void);
+int Menu(void);
 
 
 #endif // !HEADER_H
