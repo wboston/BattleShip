@@ -18,6 +18,7 @@ typedef enum bool
 
 void pause(void);
 int Menu(void);
+void printRules(void);
 
 
 #endif // !HEADER_H

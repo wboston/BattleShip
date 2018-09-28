@@ -1,13 +1,13 @@
 
 #include "Header.h"
 
-// Pause function so i dont have to type this out every time
+// i didn't want to type this out every time...
 void pause(void) 
 {
-	printf("\n Press any key to continue... \n");
 	system("pause");
 }
 
+// Menu: Displays the welcome Menu and handles users selection
 int Menu(void)
 {
 	int MenuSelection = 0;
@@ -24,11 +24,10 @@ int Menu(void)
 
 		switch (MenuSelection)
 		{
-		case 1:
+		case 1:			// user wants to play
 			return 1;
 		case 2:
-			//print_Rules(); // TODO;
-			pause();
+			printRules(); // TODO;
 			break;
 		case 3:
 			return -1;
@@ -39,3 +38,13 @@ int Menu(void)
 		}
 	}
 }
+
+void printRules(void)
+{
+	system("cls");
+	printf("- BattleShip Rules -\n");
+	printf("yeah... its battleship.\nThe oponnent is a computer so good luck!\n\n");
+	pause();
+	system("cls");
+}
+
